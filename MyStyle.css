@@ -1,0 +1,612 @@
+
+	/* Color scheme: Logo-green: #37c871
+			Light-green: #f3fcf6
+			White: #ffffff
+			Black: #000000
+			Shadow SoftRed: #f26c4f
+			buttonRed: #ff6700
+
+	 		TardisBlue:#102373
+			Silver: #bdc3c6
+			BaseGray: #eff0f1
+			IronBlue #67739d */
+	
+	/*  -----GENERAL MOCK-UP: BASIC TEMPLATE------   */
+
+
+	html {
+    	height: 100%;
+    	text-rendering: optimizeLegibility !important;
+    	/*-webkit-font-smoothing: antialiased !important;*/
+	}
+
+	* {margin:0;
+		padding:0;
+		}
+
+	body {
+			background-color: #f3fcf6;
+			height:100%;
+			margin: 0;
+	    	background-repeat: no-repeat;
+	    	background-attachment: fixed;
+	}
+	
+	#sideTop {
+		background-color: #ffffff;
+		height:140px;
+		position:fixed;
+		top:0;
+		width:100%;
+		}
+		
+	#sideBottom {
+		background-color: #ffffff;
+		height:100px;
+		position:fixed;
+		bottom:0;
+		width:100%;
+		}
+		
+	.main {
+		width:900px;
+		margin-left: auto;
+		margin-right: auto;
+		display:block;
+		height:100%;
+	}
+	
+	#middlesection {
+		height:auto;
+		top:140px;
+		bottom:100px;
+		position:absolute;
+		width:900px;
+		overflow-y:auto;
+		/*overflow-y:overlay;*/
+		overflow-x:hidden;
+		-webkit-overflow-scrolling: touch;
+		-webkit-transform:translateZ(0);
+	}
+
+	/*  ----GENERAL MOCK-UP: LOGO+NAVIGATION AREA----   */
+
+	#SigSmall a:hover{
+		 -webkit-filter: drop-shadow(0px 0px 10px #f26c4f);
+    		/*filter: drop-shadow(0px 0px 10px #ff6700);*/
+    		/*filter: url(#drop-shadow);
+    	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color=#f26c4f)";
+    		filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color=#f26c4f)";*/
+
+		}
+
+	#SigSmall {
+		width:200px;
+		position:absolute;
+		text-align:center;
+		left:10px;
+		top:35px;
+		padding:0;
+		}
+
+	#SignatureSmall {
+		width:200px;
+		position:relative;
+		height:140px;
+		margin:0;
+		padding:0;
+		float:left;
+		}
+
+	.navarea {
+		font-family: Ubuntu;
+		font-size:15px;
+		width:700px;
+		height:120px;
+		padding-top:10px;
+		padding-bottom:10px;
+		float:left;
+		}
+
+	.nav {
+		list-style-type:none;
+		/*text-decoration:none;*/
+		padding-left:0;
+		margin:0;
+		height:120px;
+	}
+
+	div.nuttext{
+		width: 80px;
+		height: 50px;
+		padding-top:45px;
+		/*color:#000000;*/
+		/*text-align:center;*/
+		vertical-align:middle;
+		display:inline;
+		position:absolute;
+		}
+
+	.nav a{
+		width:80px;
+		height:120px;
+		color:#000000;
+		display:block;
+		}
+	/*.nav a:visited{
+		color:#ff6700;
+		}*/
+
+	.nut_thispage{
+		width: 80px;
+		height: 50px;
+		padding-top:45px;
+		color:#37c871;
+		font-weight: bold;
+		/*text-align:center;*/
+		vertical-align:middle;
+		display:inline;
+		position:absolute;
+		}
+
+	.nut_thispage:hover{
+		color:#ff6700;
+	}
+	.nav a:active{
+		color:#ff6700;
+		}
+
+	.nav a:hover{
+		color:#ff6700;
+		 -webkit-filter: drop-shadow(0px 0px 10px #f26c4f);
+		}
+
+	.nav li:hover{
+
+    		/*filter: drop-shadow(0px 0px 10px #ff6700);*/
+    		/*filter: url(#drop-shadow);
+    	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color=#f26c4f)";
+    		filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color=#f26c4f)";*/
+		}
+
+	.nav li{
+    	height:120px;
+    	width:100px;
+    	float:left;
+		text-align:center;
+		text-decoration:none;
+		}
+
+	/*  -----HOME-PAGE CONTENT----- */
+
+	#home_titel {
+		height:600px;
+		margin-top:20px;;
+		margin-bottom:0;
+		position:absolute;
+		padding:0;
+		width:900px;
+		overflow-y:hidden;
+	}
+
+	#Portrait {
+		margin-left: 0;
+		width:400px;
+		/*height:300px;*/
+		display:block;
+		position:absolute;
+		margin-top:5px;
+		/*float:left;*/
+		z-index:0;
+		/* bottom:0; */
+		 /*-webkit-filter: drop-shadow(5px 5px 5px #67739d);*/
+		/*outline:2px solid #102373;*/
+	}
+
+	#Portrait img{
+		width:100%;
+		bottom:0;
+		/* -webkit-filter: drop-shadow(5px 5px 10px #67739d);*/
+                 /* drop-shadow(-2px -2px 0 #67739d);
+  		filter: drop-shadow(2px 2px 0 #67739d)
+  				 drop-shadow(-2px -2px 0 #67739d);*/
+          }
+
+	#mysignature img{
+		/*top:90px;
+		right:47px;
+		float:right;*/
+		width: 80%;
+		text-align:center;
+		display:inline;
+		/*position:absolute;*/
+		margin-top:130px;
+		}
+
+	#subtitle{
+		font-family:"Century Schoolbook L";
+		font-size:1.5em;
+		font-style:italic;
+		/*max-width:350px;*/
+		font-weight:normal;
+		padding-top:15px;
+		text-align:center;
+		}
+
+	#signature {
+		position:relative;
+		width: 400px;
+		float:right;
+		/*height:300px;*/
+		/*margin-left:50px;*/
+		display:block;
+		text-align:center;
+		z-index:1;
+		/*background-image:url("Pictures/Robo.png");
+		background-size:150px auto;
+		background-repeat: no-repeat;
+    	background-position: 60% 100%; */
+	}
+
+	/*  -----SUB-PAGE: GENERAL MOCK-UP----- */
+
+	.page_titel{
+		margin-top:20px;;
+		/*margin-bottom:0;*/
+		margin-left:25px;
+		float:left;
+		padding:0;
+		min-width:475px;
+		max-width:880px;
+		z-index:0;
+		font-family:"Verdana";
+		font-style:normal;
+		font-weight:bold;
+		font-size:1.5em;
+		clear:both;
+		display:block;
+	}
+	
+	.paragraph{
+		clear:both;
+		}
+		
+	span.boldspan{
+		font-weight:bold;
+		}
+	
+	ul.indentList{
+		margin:2em;
+		}
+		
+	div.page_p{
+		font-size:1.063em;
+		font-family:"Georgia";
+		float:left;
+		width:400px;
+		height:250px;
+		margin:20px;
+		display:block;
+		text-align:justify;
+		overflow:visible;
+	}
+
+	div.page_double{
+		float:left;
+		/*padding:0;*/
+		width:850px;
+		z-index:0;
+		font-size:1.063em;
+		font-family:"Georgia";
+		margin:20px;
+		display:block;
+		text-align:justify;
+		overflow:visible;
+	}
+	
+	div.caption {
+		font-size:0.85em;
+		font-family:"Georgia";
+		max-width:350px;
+		font-style:italic;
+		text-align:center;
+		/*position:relative;*/
+		
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:10px;
+		}
+		
+	div.page_p img{
+		max-width:350px;
+		max-height:250px; /*250px;*/
+		/*outline:#102373 solid 2px;
+		box-shadow:5px 5px 10px #67739d;*/
+		/*overflow:hidden;*/
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		/*margin-top:2px;*/
+		}
+	
+	div.page_double img{
+		max-width:850px;
+		max-height:500px;
+		/*outline:#102373 solid 2px;
+		box-shadow:5px 5px 10px #67739d;*/
+			/*overflow:hidden;*/
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		/*margin-top:2px;*/
+		}
+
+	a.icon_in_p{
+		height:auto;
+		width:auto;
+		vertical-align:middle;
+		display:inline-block;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	
+	div.piccontainer{
+		width:350px;
+		height:212px;
+		position:relative;
+		text-align:center;
+	}
+	
+	#excel1{
+		width:100%;
+		top:0;
+		position:absolute;
+	}
+	
+	#excelvba{
+		width:45%;
+		bottom:0;
+		position:absolute;
+		left:25px;
+	}
+	
+	#matlab_script{
+		width:60%;
+		top:0;
+		position:absolute;
+		left:0;
+	}
+	
+	#matlab_f{
+		width:39%;
+		top:0;
+		right:0;
+		position:absolute;
+	}
+	
+	#matlab_plots{
+		width:45%;
+		bottom:0;
+		position:absolute;
+		left:95px;
+	}
+	
+	#ansys1{
+		width:50%;
+		top:0;
+		position:absolute;
+		left:0;
+	}
+	
+	#ansys2{
+		width:50%;
+		top:40px;
+		left:87px;
+		position:absolute;
+	}
+	
+	#ansys3{
+		width:50%;
+		bottom:0;
+		right:0;
+		position:absolute;
+	}
+	
+	#vb_rk1{
+		width:52%;
+		top:0;
+		left:0;
+		position:absolute;
+	}
+	
+	#vb_rk2{
+		width:52%;
+		bottom:0;
+		right:0;
+		position:absolute;
+	}
+	
+	#html1pic{
+		width:60%;
+		top:0;
+		left:0;
+		position:absolute;
+	}
+	
+	#html2pic{
+		width:60%;
+		bottom:0;
+		right:0;
+		position:absolute;
+	}
+	
+	#spectrum{
+		width:100%;
+		top:0;
+		position:absolute;
+		background-color:#ffffff;
+		}
+		
+	#asimo{
+		width:12%;
+		bottom:0;
+		left:0;
+		position: absolute;
+		}
+	
+	#retractable{
+		width:32%;
+		bottom:0;
+		left: 90px;
+		position: absolute;
+		}
+		
+	#scarab{
+		width:29%;
+		bottom:0;
+		right:0;
+		position:absolute;
+		}
+		
+	#cart_schematic{
+		top:0;
+		position:absolute;
+		height:68%;
+		left:67px;
+		}
+	
+	#cart_equations{
+		bottom:0;
+		position:absolute;
+		height:30%;
+		}
+		
+	#flap{
+		top:0;
+		left:0;
+		position:absolute;
+		height:50%;
+		}
+	
+	#holder{
+		bottom:0;
+		left:0;
+		position:absolute;
+		height:50%;
+		}
+	
+	#adapter{
+		position:absolute;
+		right:0;
+		}
+	
+	#carabin{
+		top:0;
+		left:0;
+		position:absolute;
+		height:45%;
+		}
+	
+	#uniknot{
+		bottom:0;
+		left:0;
+		position:absolute;
+		height:54%;
+		}
+	
+	#elasticbands{
+		position:absolute;
+		right:0;
+		width:65%;		
+		}	
+	
+	#Valorisation_occupation{
+		position:absolute;
+		left:0;
+		top:0;
+		height:50%;
+		}
+		
+	#Valorisation_activity{
+		position:absolute;
+		right:0;
+		top:0;
+		height:50%;
+		}
+		
+	#Valorisation_capacity{
+		position:absolute;
+		left:0;
+		bottom:0;
+		height:50%;
+		}
+	
+	#Valorisation_piechart{
+		position:absolute;
+		right:0;
+		bottom:0;
+		height:50%;
+		}
+				
+	div.page_p a{
+		height:auto;
+		width:auto;
+		display:inline-block;
+		/*margin-right: auto;
+		margin-left: auto;*/
+		}
+		
+	div.page_p a:hover{
+		box-shadow:0 0 25px #f26c4f;
+	}
+	
+	h2{
+		font-family:"Century Schoolbook L";
+		font-size:1.25em;
+		font-style:italic;
+		font-weight:normal;
+		padding-bottom:10px;
+		text-align:center;
+		}
+
+	h3{
+		font-family:"Century Schoolbook L";
+		font-size:1em;
+		font-style:normal;
+		font-weight:bold;
+		padding-bottom:5px;
+		text-align:left;
+	}
+
+	div.page_p h2{
+		font-family:"Century Schoolbook L";
+		font-size:1.25em;
+		font-style:italic;
+		max-width:350px;
+		font-weight:normal;
+		padding-bottom:10px;
+		text-align:center;
+		} 
+
+	/*#validators{
+		bottom:5px;
+		margin-left:5px;
+		position:absolute;
+		padding:0;
+		display:block;
+		} */
+		
+	/*#footer{
+		clear:both;
+		background-color:#102372;
+		padding-top:5px;
+		padding-bottom:5px;
+		margin-bottom:150px;
+		width:200px;
+		position:relative;
+		height:150px;
+		margin:0;
+		padding:0;
+		float:left;
+		}*/
